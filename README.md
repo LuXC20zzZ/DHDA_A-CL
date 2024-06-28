@@ -7,6 +7,9 @@
 - Sklearn
 - Pandas
 
+## Run:
+- train_main -> test_main -> plot_main
+
 ## Datasets
 ### Download Datasets
 IEEE PHM2012

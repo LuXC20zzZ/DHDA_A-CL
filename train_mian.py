@@ -4,10 +4,10 @@ from datetime import datetime
 import logging
 from utils.train_utils import train_utils
 import torch
-import warnings
 import numpy as np
 import random
 import time
+
 
 def setup_seed(seed):
     torch.manual_seed(seed)
@@ -19,6 +19,7 @@ def setup_seed(seed):
 # Setting random seeds
 # setup_seed()
 
+
 print(torch.__version__)
 args = None
 
@@ -27,7 +28,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Train')
 
     dir = './data/'
-    name = 'PHM1-1&1-2toPHM1-3'
+    name = 'PHM1-1&1-2toXJTU1-1'
 
     # Model
     parser.add_argument('--model_name', type=str, choices=[], default='DHDA_ACL', help='name of model')
@@ -48,8 +49,8 @@ def parse_args():
     parser.add_argument('--momentum', type=float, default=0.3, help='momentum for sgd')
     parser.add_argument('--weight_decay', type=float, default=3e-6, help='weight decay')
     parser.add_argument('--lr', type=float, default=0.001, help='initial learning rate')
-    parser.add_argument('--lr_scheduler', type=str, choices=['step', 'exp', 'stepLR', 'fix'],
-                        default='step', help='learning rate schedule')
+    parser.add_argument('--lr_scheduler', type=str,
+                        choices=['step', 'exp', 'stepLR', 'fix'], default='step', help='learning rate schedule')
     parser.add_argument('--steps', type=str, default='120, 160', help='learning rate decay for step and stepLR')
     parser.add_argument('--gamma', type=float, default=0.1, help='learning rate scheduler parameter for step, stepLR and exp')
     # Save
@@ -74,7 +75,6 @@ if __name__ == '__main__':
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
 
-    # Save the args
     for k, v in args.__dict__.items():
         logging.info("{}: {}".format(k, v))
 

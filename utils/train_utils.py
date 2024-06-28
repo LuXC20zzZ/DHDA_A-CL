@@ -323,7 +323,7 @@ class train_utils(object):
                                    os.path.join(self.save_dir, '{}-{:.4f}-best_model.pth'.format(epoch, best_error)))
 
                     if epoch == args.max_epoch-1:
-                        acc_df.to_csv('./result_csv_files/' + 'Results_' + args.mode + '_' + args.model_name + '_' + args.data_file + '.csv', sep=",", index=False)
+                        acc_df.to_csv('./result_csv_files/' + 'Results_' + args.model_name + '_' + args.data_file + '.csv', sep=",", index=False)
                         acc_means = acc_df.mean()
                         logging.info('rmse {:.4f}, rmlse {:.4f}, mae {:.4f}, r2 {:.4f}, score {:.4f}'.format(acc_means['rmse'],
                                                                                                              acc_means['rmlse'],

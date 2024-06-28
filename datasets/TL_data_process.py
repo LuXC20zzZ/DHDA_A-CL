@@ -1,5 +1,3 @@
-#!/usr/bin/python
-# -*- coding:utf-8 -*-
 from datasets.data_package import dataset
 import pandas as pd
 from datasets.sequence_aug import *

@@ -1,5 +1,9 @@
 ## Datasets (PHM2012 & XJTU-SY)
-### Download Datasets
+- The test data is provided here to verify the performance of prediction model.
+- The training data are not available to upload due to the size limitation of uploading files to GitHub, readers can download the corresponding dataset for experimentation by following the below link.
+- 👇
+
+### Datasets download link
 IEEE PHM2012
 - Citation: Patrick Nectoux, Rafael Gouriveau, Kamal Medjaher, Emmanuel Ramasso, Brigitte Morello, Nourredine Zerhouni, Christophe Varnier. PRONOSTIA: An Experimental Platform for Bearings Accelarated Life Test. IEEE International Conference on Prognostics and Health Management, Denver, CO, USA, 2012.
 - This is a dataset that was used for the IEEE PHM 2012 Data Challenge. It used to be online at (http://www.femto-st.fr/en/Research-departments/AS2M/Research-groups/PHM/IEEE-PHM-2012-Data-challenge.php).

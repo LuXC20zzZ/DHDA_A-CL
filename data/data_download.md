@@ -1,7 +1,6 @@
 ## Datasets (PHM2012 & XJTU-SY)
 - The test data is provided here to verify the performance of prediction model.
-- The training data are not available to upload due to the size limitation of uploading files to GitHub, readers can download the corresponding dataset for experimentation by following the below link.
-- 👇
+- The training data are not available to upload due to the size limitation of uploading files to GitHub, readers can download the corresponding dataset for experimentation by following the below link. 👇
 
 ### Datasets download link
 IEEE PHM2012
